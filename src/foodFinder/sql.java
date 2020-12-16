@@ -49,6 +49,7 @@ public class sql {
 	 */
 	public void createTableFood() {
 		try {
+			int i = 3;
 			Connection con = getConnection();
 			PreparedStatement createTable = con
 					.prepareStatement("CREATE TABLE IF NOT EXISTS " + "food2(name varchar(255),value varchar(255),"
